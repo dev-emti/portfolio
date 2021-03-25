@@ -102,6 +102,7 @@ body {
 	padding: 10px 20px;
 	background: #1666c3;
 	border: 2px solid #fffcfc;
+	outline: none;
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	color: white;
@@ -208,7 +209,11 @@ body {
 	color: #333;
 	transition: all 150ms ease-in;
 }
-.card-footer p:hover {
+.card-footer a {
+	text-decoration: none;
+	color: #333;
+}
+.card-footer a:hover {
 	color: white;
 	text-decoration: underline;
 }
