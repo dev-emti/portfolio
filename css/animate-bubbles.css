@@ -1,0 +1,119 @@
+.animation-area{
+}
+.bubbles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bubbles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    bottom: -100px;
+    backdrop-filter: blur(2px);
+    box-shadow: inset 5px -5px 10px white;
+    animation: animate 20s linear infinite;
+}
+.bubbles li::before{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 14px;
+    left: 8px;
+    box-shadow: 0px 0px 10px white;
+}
+.bubbles li .dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    right: 20%;    
+}
+.bubbles li:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.bubbles li:nth-child(2){
+    left: 12%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1s;
+    animation-duration: 15s;
+}
+.bubbles li:nth-child(3){
+    left: 72%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+}
+.bubbles li:nth-child(4){
+    left: 25%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+}
+
+.bubbles li:nth-child(5){
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+    animation-duration: 8s;
+}
+.bubbles li:nth-child(6){
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 3s;
+}
+.bubbles li:nth-child(7){
+    left: 90%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 6s;
+    animation-duration: 5s;
+}
+.bubbles li:nth-child(8){
+    left: 35%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 4s;
+}
+.bubbles li:nth-child(9){
+    left: 85%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+}
+
+.bubbles li:nth-child(10){
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+    animation-duration: 13s;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}

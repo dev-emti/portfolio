@@ -1,0 +1,139 @@
+.animation-area{
+    
+}
+.animating-square, .animating-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.animating-square li, .animating-circle li{
+    position: absolute;
+    display: block;
+    list-style: none;
+}
+.animating-square li{
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    top: -100px;
+    animation: animate-square 20s linear infinite;
+}
+.animating-square li:nth-child(1){
+    top: 20%;
+    left: 86%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+.animating-square li:nth-child(2){
+    top: 60%;
+    left: 40%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.animating-square li:nth-child(3){
+    top: 75%;
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;    
+    animation-duration: 5s;
+}
+.animating-square li:nth-child(4){
+    top: 15%;
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 25s;
+}
+.animating-square li:nth-child(5){
+    top: 20%;
+    left: 30%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.animating-circle li{
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    top: -150px;
+    animation: animate-circle 20s linear infinite;
+}
+.animating-circle li:nth-child(1){
+    left: 20%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+.animating-circle li:nth-child(2){
+    left: 30%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 15s;
+}
+.animating-circle li:nth-child(3){
+    left: 60%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 3s;    
+    animation-duration: 5s;
+}
+.animating-circle li:nth-child(4){
+    left: 90%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    animation-duration: 25s;
+}
+.animating-circle li:nth-child(5){
+    left: 55%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 5s;
+}
+
+@keyframes animate-square {
+    0%{
+        transform: rotate(0deg) scale(0);
+        border-color: white;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(180deg) scale(1);
+        border-color: red;
+    }
+    100%{
+        transform: rotate(360deg) scale(0);
+        border-color: yellow;
+        opacity: 0;
+    }
+}
+@keyframes animate-circle {
+    0%{
+        transform: translateY(0) scale(0);
+        border-color: white;
+        opacity: 1;
+    }
+    50%{
+        border-color: yellow;
+    }
+    100%{
+        transform: translateY(800px) scale(1);
+        border-color: red;
+        opacity: 0;
+    }
+}
