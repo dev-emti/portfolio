@@ -27,7 +27,7 @@
 }
 .animating-square li:nth-child(1){
     background-color: #003561;
-    top: 20%;
+    top: 27%;
     left: 86%;
     width: 30px;
     height: 30px;
@@ -45,26 +45,26 @@
 }
 .animating-square li:nth-child(3){
     background-color: #9bd2ff;
-    top: 75%;
+    top: 90%;
     left: 10%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;    
-    animation-duration: 5s;
+    animation-duration: 20s;
 }
 .animating-square li:nth-child(4){
     background-color: #5ea4dc;
     top: 15%;
     left: 5%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     animation-delay: 0s;
-    animation-duration: 25s;
+    animation-duration: 17s;
 }
 .animating-square li:nth-child(5){
     background-color: #7397b5;
-    top: 20%;
-    left: 30%;
+    top: 85%;
+    left: 80%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
