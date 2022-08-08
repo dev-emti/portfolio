@@ -22,7 +22,7 @@ nav {
   height: 60px;
   width: 100%;
   padding: 0 20px;
-  background-color: transparent;
+  background-color: #007BE0;
   color: black;
 }
 nav ul {
@@ -44,7 +44,7 @@ nav .links i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 @media (min-width: 700px) {
   #hero {
@@ -53,9 +53,10 @@ nav .links i {
   }
 }
 #hero .img-container {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   width: 100%;
 }
 @media (min-width: 700px) {
@@ -65,6 +66,26 @@ nav .links i {
 }
 #hero .img-container img {
   width: 300px;
+}
+#hero .img-container img.floating-icon {
+  position: absolute;
+}
+#hero .img-container .html {
+  top: 2%;
+  height: 40px;
+  width: 40px;
+}
+#hero .img-container .css {
+  top: 3%;
+  left: 7%;
+  height: 60px;
+  width: 60px;
+}
+#hero .img-container .js {
+  top: 32%;
+  left: 85%;
+  height: 50px;
+  width: 50px;
 }
 #hero .info-container {
   display: flex;
@@ -195,4 +216,14 @@ nav .links i {
   width: 75px;
   height: auto;
   margin-bottom: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(51, 51, 51, 0.475);
+  color: white;
+  margin-top: 75px;
 }/*# sourceMappingURL=style.css.map */

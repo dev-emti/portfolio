@@ -22,7 +22,7 @@ nav{
     height: 60px;
     width: 100%;
     padding: 0 20px;
-    background-color: transparent;
+    background-color: $clr-primary;
     color: black;
 
     ul{
@@ -48,22 +48,44 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     @media (min-width: 700px) {
         height: 100vh;
         flex-direction: row-reverse;
     }
     // HERO IMAGE CONTAINER
     .img-container{
+        position: relative;
         display: flex;
         justify-content: center;
-        align-self: center;
+        align-items: center;
         width: 100%;
+        // background-color: red;
         @media (min-width: 700px) {
             padding-bottom: 10%;
         }
         img{
             width: 300px;
+        }
+        img.floating-icon{
+            position: absolute;
+        }
+        .html{
+            top: 2%;
+            height: 40px;
+            width: 40px;
+        }
+        .css{
+            top: 3%;
+            left: 7%;
+            height: 60px;
+            width: 60px;
+        }
+        .js{
+            top: 32%;
+            left: 85%;
+            height: 50px;
+            width: 50px;
         }
     }
 
@@ -203,4 +225,14 @@ nav{
             margin-bottom: 5px;
         }
     }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: rgba(51, 51, 51, 0.475);
+    color: white;
+    margin-top: 75px;
 }
