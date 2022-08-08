@@ -175,6 +175,7 @@ nav .links i {
 #services h1 {
   font-size: 2em;
   margin-bottom: 10px;
+  color: #007BE0;
 }
 #services .service-container {
   display: flex;
