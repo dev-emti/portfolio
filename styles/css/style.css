@@ -11,6 +11,7 @@
 body {
   font-size: 1em;
   font-family: "Quicksand", sans-serif;
+  background-color: whitesmoke;
 }
 
 nav {
@@ -162,4 +163,35 @@ nav .links i {
   color: white;
   border: 1px solid #1D4261;
   margin-top: 5px;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#services h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+#services .service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgb(153, 153, 153);
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: white;
+}
+#services .service-container img {
+  width: 75px;
+  height: auto;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */
