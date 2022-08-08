@@ -1,0 +1,170 @@
+// IMPORT SCSS
+@import "./variables";
+
+/* GLOBAL VARIABLE */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+    font-family: $font-quicksand;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    background-color: transparent;
+    color: black;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        list-style-type: none;
+        gap: 10px;
+    }
+    .links{
+        i{
+            font-size: 1em;
+            color: black;
+            padding-left: 10px;
+        }
+    }
+
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    @media (min-width: 700px) {
+        height: 100vh;
+        flex-direction: row-reverse;
+    }
+    // HERO IMAGE CONTAINER
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        @media (min-width: 700px) {
+            padding-bottom: 10%;
+        }
+        img{
+            width: 300px;
+        }
+    }
+
+    // HERO INFO CONTAINER
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    h1{
+        font-size: 2.5em;
+
+        b{
+            font-family: $font-montserrat;
+            font-weight: 900;
+            color: $clr-primary;
+        }
+    }
+    h6{
+        font-size: 1em;
+    }
+    p{
+        font-size: .9em;
+        margin: 25px 0;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        button{
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .btn-dl-cv{
+            border: 1px solid rgb(66, 66, 255);
+            background-color: rgb(66, 66, 255);
+        }
+        .btn-hire-me{
+            border: 1px solid rgb(11, 151, 11);
+            background-color: rgb(11, 151, 11);
+        }
+    }
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        width: 300px;
+        height: 400px;
+        border: none;
+        box-shadow: 0 0 5px rgb(182, 182, 182);
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 15px 0;
+        .img-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 300px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+        }
+        .info-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+            width: 100%;
+            background-color: $clr-accent;
+
+            button{
+                width: 150px;
+                padding: 7px 10px;
+                border-radius: 20px;
+                background-color: $clr-dark;
+                color: white;
+                border: 1px solid $clr-dark;
+                margin-top: 5px;
+            }
+        }
+    }
+}

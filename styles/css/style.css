@@ -11,18 +11,18 @@
 body {
   font-size: 1em;
   font-family: "Quicksand", sans-serif;
+  overflow: hidden;
 }
 
 nav {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  width: 100%;
+  max-width: 1200px;
   padding: 0 20px;
-  background-color: transparent;
-  color: black;
+  background-color: #007BE0;
+  color: white;
 }
 nav ul {
   display: flex;
@@ -34,7 +34,7 @@ nav ul {
 }
 nav .links i {
   font-size: 1em;
-  color: black;
+  color: whitesmoke;
   padding-left: 10px;
 }
 
@@ -43,27 +43,22 @@ nav .links i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  padding-top: 10%;
 }
 @media (min-width: 700px) {
   #hero {
     height: 100vh;
     flex-direction: row-reverse;
+    padding-top: 0;
   }
 }
 #hero .img-container {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 100%;
-}
-@media (min-width: 700px) {
-  #hero .img-container {
-    padding-bottom: 10%;
-  }
+  max-height: 420px;
+  padding: 10%;
 }
 #hero .img-container img {
-  width: 300px;
+  height: 420px;
 }
 #hero .info-container {
   display: flex;
@@ -71,93 +66,5 @@ nav .links i {
   justify-content: center;
   align-items: center;
   padding: 5%;
-  padding-bottom: 50px;
   text-align: center;
-}
-#hero h1 {
-  font-size: 2.5em;
-}
-#hero h1 b {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  color: #007BE0;
-}
-#hero h6 {
-  font-size: 1em;
-}
-#hero p {
-  font-size: 0.9em;
-  margin: 25px 0;
-}
-#hero .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-#hero .buttons button {
-  border-radius: 20px;
-  padding: 10px 20px;
-  color: white;
-}
-#hero .buttons .btn-dl-cv {
-  border: 1px solid rgb(66, 66, 255);
-  background-color: rgb(66, 66, 255);
-}
-#hero .buttons .btn-hire-me {
-  border: 1px solid rgb(11, 151, 11);
-  background-color: rgb(11, 151, 11);
-}
-
-#projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-}
-#projects .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: whitesmoke;
-  width: 300px;
-  height: 400px;
-  border: none;
-  box-shadow: 0 0 5px rgb(182, 182, 182);
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 15px 0;
-}
-#projects .project .img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 300px;
-}
-#projects .project .img-container img {
-  width: 100%;
-  height: auto;
-}
-#projects .project .info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100px;
-  width: 100%;
-  background-color: #459DE6;
-}
-#projects .project .info-container button {
-  width: 150px;
-  padding: 7px 10px;
-  border-radius: 20px;
-  background-color: #1D4261;
-  color: white;
-  border: 1px solid #1D4261;
-  margin-top: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -8,21 +8,25 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1;
+    z-index: -12;
 }
 .animating-square li, .animating-circle li{
     position: absolute;
     display: block;
     list-style: none;
+    top: 0;
+    z-index: -11;
 }
 .animating-square li{
     height: 50px;
     width: 50px;
     border: 3px solid white;
+    border-radius: 50%;
     top: -100px;
     animation: animate-square 20s linear infinite;
 }
 .animating-square li:nth-child(1){
+    background-color: #003561;
     top: 20%;
     left: 86%;
     width: 30px;
@@ -31,7 +35,8 @@
     animation-duration: 10s;
 }
 .animating-square li:nth-child(2){
-    top: 60%;
+    background-color: #007BE0;
+    top: 43%;
     left: 40%;
     width: 80px;
     height: 80px;
@@ -39,6 +44,7 @@
     animation-duration: 15s;
 }
 .animating-square li:nth-child(3){
+    background-color: #9bd2ff;
     top: 75%;
     left: 10%;
     width: 80px;
@@ -47,6 +53,7 @@
     animation-duration: 5s;
 }
 .animating-square li:nth-child(4){
+    background-color: #5ea4dc;
     top: 15%;
     left: 5%;
     width: 20px;
@@ -55,6 +62,7 @@
     animation-duration: 25s;
 }
 .animating-square li:nth-child(5){
+    background-color: #7397b5;
     top: 20%;
     left: 30%;
     width: 80px;
@@ -67,11 +75,11 @@
     width: 50px;
     border: 3px solid white;
     border-radius: 50%;
-    top: -150px;
+    top: -100px;
     animation: animate-circle 20s linear infinite;
 }
 .animating-circle li:nth-child(1){
-    left: 20%;
+    left: 10%;
     width: 30px;
     height: 30px;
     animation-delay: 1s;
@@ -85,21 +93,21 @@
     animation-duration: 15s;
 }
 .animating-circle li:nth-child(3){
-    left: 60%;
-    width: 80px;
-    height: 80px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
     animation-delay: 3s;    
-    animation-duration: 5s;
+    animation-duration: 7s;
 }
 .animating-circle li:nth-child(4){
-    left: 90%;
+    left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
     animation-duration: 25s;
 }
 .animating-circle li:nth-child(5){
-    left: 55%;
+    left: 90%;
     width: 80px;
     height: 80px;
     animation-delay: 5s;
@@ -124,16 +132,16 @@
 }
 @keyframes animate-circle {
     0%{
-        transform: translateY(0) scale(0);
-        border-color: white;
+        transform: translateY() scale(0);
+        border-color: #003561;
         opacity: 1;
     }
     50%{
-        border-color: yellow;
+        border-color: #007BE0;
     }
     100%{
         transform: translateY(800px) scale(1);
-        border-color: red;
+        border-color: #459DE6;
         opacity: 0;
     }
 }

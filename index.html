@@ -6,64 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manny's Portfolio</title>
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="./css/animation.css">
-     <!-- BOOTSTRAP -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- NAVIGATION BAR -->
-    <nav id="navbar" class="navbar navbar-expand-sm bg-light bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Manny's Portpolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">About</a>
-              </li>
-            </ul>
-            <div class="links">
-                <a href="#" class="link"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="link"><i class="bi bi-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
 
     <!-- HERO -->
-    <section id="hero" class="d-flex pt-5">
-        <div class="col-12 col-md-6 px-3 py-5 my-3">
-            <h2>HEY</h2>
-            <h1>I'm <b>Manny Toledo Jr</b></h1>
-            <span id="typed_my_job">Front-End Developer</span>
-            <div class="d-flex mt-3 gap-3">
-                <button type="button" class="btn bg-clr-secondary shadow-sm">Download CV</button>
-                <button type="button" class="btn bg-clr-secondary shadow-sm">Hire Me</button>
-            </div>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul>
+        <li>Home</li>
+        <li>Project</li>
+        <li>About</li>
+      </ul>
+      <div class="links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </nav>
+
+    <section id="hero">
+        <div class="img-container">
+            <img class="img-hero" src="img/hero-image.png" alt="">
         </div>
-        <div class="col-md-6">
-            <div class="img-container">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <img class="img-hero" src="img/meAndLea.png" alt="">
-            </div>
+        <div class="info-container">
+          <h1 class="">Hi, I'am <b>Manny</b></h1>
+          <h6>Frontend developer</h6>
+          <p id="typed_my_job">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae temporibus hic voluptatibus nesciunt excepturi voluptate soluta quisquam vel iusto distinctio!</p>
+          <div class="buttons">
+              <button type="button" class="btn-dl-cv">Download CV</button>
+              <button type="button" class="btn-hire-me">Hire Me</button>
+          </div>
         </div>
     </section>
-    <!-- <div class="animation-area">
+
+    <section id="projects">
+      <h1>PROJECTS</h1>
+      <div class="project">
+        <div class="img-container">
+          <img src="./img/todo.jpg" alt="">
+        </div>
+        <div class="info-container">
+          <h3>Todo List</h3>
+          <button>VISIT</button>
+        </div>
+      </div>
+      <div class="project">
+        <div class="img-container">
+          <img src="./img/form-validation.jpg" alt="">
+        </div>
+        <div class="info-container">
+          <h3>Form Validation</h3>
+          <button>VISIT</button>
+        </div>
+      </div>
+      <div class="project">
+        <div class="img-container">
+          <img src="./img/photoshop-icon.svg" alt="">
+        </div>
+        <div class="info-container">
+          <h3>Ongoing</h3>
+          <button>VISIT</button>
+        </div>
+      </div>
+    </section>
+    <div class="animation-area">
         <ul class="animating-square">
             <li></li>
             <li></li>
@@ -78,7 +87,7 @@
             <li></li>
             <li></li>
         </ul>
-    </div> -->
+    </div>
 
     <!-- <footer>
         <div class="container">
